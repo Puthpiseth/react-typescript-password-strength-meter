@@ -6,11 +6,11 @@
 - Install Nodejs if you haven't installed it yet
 - Install dependencies
 
-  yarn install
+      yarn install
 
 - Run the application
 
-  yarn start
+      yarn start
 
 ### Live App
 
