@@ -3,10 +3,10 @@ import { useForm } from 'react-hook-form';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import PasswordStrengthBar from 'react-password-strength-bar';
 import styled from 'styled-components';
-import { InputField } from './UI/Input/InputField';
-import { EyeCloseOpenIcon } from './UI/Input/components/EyeCloseOpenIcon';
-import { Label } from './UI/Text/Label';
-import { Title } from './UI/Text/Title';
+import { InputField } from '../Input/InputField';
+import { EyeCloseOpenIcon } from '../Input/components/EyeCloseOpenIcon';
+import { Label } from '../UI/Text/Label';
+import { Title } from '../UI/Text/Title';
 
 export const Container = styled.div`
   display: flex;

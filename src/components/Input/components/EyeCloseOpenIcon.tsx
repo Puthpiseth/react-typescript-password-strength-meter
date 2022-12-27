@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import { Icon } from './Icon';
 
 const InputIcon = styled.button`
+  width: 5%;
   position: relative;
-  bottom: 30%;
-  left: 44%;
+  bottom: 29%;
+  left: 91%;
+  padding: 0;
   background: none;
   border: none;
   cursor: pointer;
