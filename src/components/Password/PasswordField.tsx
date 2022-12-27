@@ -40,6 +40,7 @@ const RegisterForm = () => {
   const [passwordShown, setPasswordShown] = useState<boolean>(false);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    // By adding .split(' ').join('') or .replace(/\s/g, '') or .trim() to prevent to enter space in input field
     const newValue = event.target.value;
     setPassword(newValue);
   };
@@ -56,7 +57,7 @@ const RegisterForm = () => {
         <Label>Password</Label>
         <InputField
           {...register('password')}
-          value={password}
+          value={password.trim()}
           type={passwordShown ? 'text' : 'password'}
           placeholder="Enter your password"
           onChange={handleChange}

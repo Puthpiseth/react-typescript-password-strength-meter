@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import { Icon } from './Icon';
 
+const IconLayout = styled.div`
+  width: 100%;
+`;
+
 const InputIcon = styled.button`
   width: 5%;
   position: relative;
-  bottom: 29%;
+  bottom: 135%;
   left: 91%;
   padding: 0;
   background: none;
@@ -20,12 +24,12 @@ interface InputProps {
 export const EyeCloseOpenIcon = (props: InputProps) => {
   const { icon, onClick } = props;
   return (
-    <>
+    <IconLayout>
       {icon ? (
         <InputIcon onClick={onClick}>
           <Icon icon={icon} />
         </InputIcon>
       ) : null}
-    </>
+    </IconLayout>
   );
 };
