@@ -1,10 +1,10 @@
-import RegisterForm from './components/form/RegisterForm';
-import { MainLayout } from './components/layout/MainLayout';
+import PasswordField from './components/PasswordField';
+import { MainLayout } from './components/UI/MainLayout';
 
 function App() {
   return (
     <MainLayout>
-      <RegisterForm />
+      <PasswordField />
     </MainLayout>
   );
 }
