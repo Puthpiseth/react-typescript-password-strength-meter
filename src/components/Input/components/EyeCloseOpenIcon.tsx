@@ -1,20 +1,5 @@
-import styled from 'styled-components';
+import { IconLayout, InputIcon } from '../styles/Input.style';
 import { Icon } from './Icon';
-
-const IconLayout = styled.div`
-  width: 100%;
-`;
-
-const InputIcon = styled.button`
-  width: 5%;
-  position: relative;
-  bottom: 135%;
-  left: 91%;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-`;
 
 interface InputProps {
   icon?: React.FC;
