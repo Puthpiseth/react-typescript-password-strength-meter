@@ -1,6 +1,6 @@
 # React TypeScript Password Strength Meter
 
-A password strength meter using react-password-strength-bar library is built with React, Typescript, Styled-components and webpack.
+A password strength meter using [react-password-strength-bar](https://www.npmjs.com/package/react-password-strength-bar) library is built with React, Typescript, Styled-components and webpack.
 
 <p align="center">
       <img src="https://img.shields.io/github/repo-size/Puthpiseth/react-typescript-password-strength-meter" />
