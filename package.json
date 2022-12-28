@@ -24,10 +24,10 @@
     "zxcvbn": "^4.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "eslint . --ext .ts,.tsx",
+    "dev": "webpack serve",
+    "build": "NODE_ENV=production webpack",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
   },
   "eslintConfig": {
     "extends": [
