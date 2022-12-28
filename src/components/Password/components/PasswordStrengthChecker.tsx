@@ -12,14 +12,16 @@ interface PasswordProps {
 const PasswordStrengthChecker = ({ password }: PasswordProps) => {
   const [passwordValidator, setPasswordValidator] = useState<PasswordValidator>();
 
+  const passwordValidatorCheck = {
+    minLength: password?.length >= 8,
+    minOneLowercase: !!minOneLowercase.test(password),
+    minOneUppercase: !!minOneUppercase.test(password),
+    minOneNumber: !!minOneNumber.test(password),
+    minOneSpecialCharacter: !!minOneSpecialCharacter.test(password),
+  };
+
   useEffect(() => {
-    setPasswordValidator({
-      minLength: password?.length >= 8,
-      minOneLowercase: !!minOneLowercase.test(password),
-      minOneUppercase: !!minOneUppercase.test(password),
-      minOneNumber: !!minOneNumber.test(password),
-      minOneSpecialCharacter: !!minOneSpecialCharacter.test(password),
-    });
+    setPasswordValidator(passwordValidatorCheck);
   }, [password]);
 
   return (
