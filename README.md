@@ -14,4 +14,4 @@
 
 ### Live App
 
-![caption](src/assets/image.png)
+![caption](src/assets/password-strength-meter.gif)
