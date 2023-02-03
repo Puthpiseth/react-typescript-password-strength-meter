@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import { PasswordValidator } from '../../../types/password-validator';
-import { SubTitle } from '../../UI/Text/SubTitle';
 import { PasswordInnerContainerLayout, PasswordStrengthContainer } from '../styles/PasswordStrength.style';
 import { minOneLowercase, minOneNumber, minOneSpecialCharacter, minOneUppercase } from '../validator-regex';
 import PasswordStrengthIndicatorItem from './PasswordStrengthIndicatorItem';
@@ -44,3 +44,13 @@ const PasswordStrengthChecker = ({ password }: PasswordProps) => {
 };
 
 export default PasswordStrengthChecker;
+
+const SubTitle = styled.p`
+  font-weight: bold;
+  font-size: 12px;
+  color: #666464;
+
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
+`;

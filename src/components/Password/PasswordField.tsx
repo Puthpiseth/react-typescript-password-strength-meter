@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import PasswordStrengthBar from 'react-password-strength-bar';
+import styled from 'styled-components';
 import { EyeCloseOpenIcon } from '../Input/components/EyeCloseOpenIcon';
 import { InputField } from '../Input/styles/InputField.style';
-import { Label } from '../UI/Text/Label';
-import { Title } from '../UI/Text/Title';
 import PasswordStrengthChecker from './components/PasswordStrengthChecker';
 import { Container, InnerLayout } from './styles/Containter.style';
 
@@ -53,3 +52,21 @@ const RegisterForm = () => {
 };
 
 export default RegisterForm;
+
+const Title = styled.p`
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #07882b;
+`;
+
+const Label = styled.label`
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #666464;
+`;
