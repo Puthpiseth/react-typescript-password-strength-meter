@@ -1,6 +1,7 @@
 {
   "name": "react-typescript-password-strength-meter",
   "version": "0.1.0",
+  "homepage": "https://Puthpiseth.github.io/react-typescript-password-strength-meter",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -28,7 +29,9 @@
     "lint": "eslint . --ext .ts,.tsx",
     "dev": "webpack serve",
     "build": "NODE_ENV=production webpack",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +63,7 @@
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "prettier": "^2.8.1",
