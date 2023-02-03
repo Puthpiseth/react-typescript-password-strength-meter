@@ -26,7 +26,7 @@
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx",
     "dev": "webpack serve",
-    "build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack build --output public",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
   },
   "eslintConfig": {
